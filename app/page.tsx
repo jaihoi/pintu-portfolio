@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Github, Linkedin, Mail, Code2, ArrowRight, Star, Quote } from 'lucide-react'
-import { skills, experiences, projects, education, socialLinks, certifications, blogPosts, testimonials } from '@/lib/portfolio-data'
+import { skills, experiences, projects, education, certifications, blogPosts, testimonials } from '@/lib/portfolio-data'
 import { useEffect, useState } from 'react'
 
 export default function Home() {
