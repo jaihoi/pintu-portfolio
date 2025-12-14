@@ -3,12 +3,11 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Github, Linkedin, Mail, ExternalLink, Code2, ArrowRight, Star, Calendar, Clock, Quote } from 'lucide-react'
+import { Github, Linkedin, Mail, Code2, ArrowRight, Star, Quote } from 'lucide-react'
 import { skills, experiences, projects, education, socialLinks, certifications, blogPosts, testimonials } from '@/lib/portfolio-data'
 import { useEffect, useState } from 'react'
 
 export default function Home() {
-  const [scrollY, setScrollY] = useState(0)
   const [stats, setStats] = useState({ years: 0, projects: 0, users: 0 })
   const [visibleSections, setVisibleSections] = useState<Record<string, boolean>>({})
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
@@ -18,8 +17,6 @@ export default function Home() {
   // Track scroll position
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY)
-
       // Calculate scroll progress
       const scrollHeight = document.documentElement.scrollHeight - window.innerHeight
       const progress = scrollHeight > 0 ? (window.scrollY / scrollHeight) * 100 : 0
@@ -78,7 +75,7 @@ export default function Home() {
       setFormStatus('success')
       setFormData({ name: '', email: '', message: '' })
       setTimeout(() => setFormStatus('idle'), 3000)
-    } catch (error) {
+    } catch {
       setFormStatus('error')
       setTimeout(() => setFormStatus('idle'), 3000)
     }
@@ -127,7 +124,7 @@ export default function Home() {
             <div className="space-y-8">
               <div>
                 <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-6">
-                  Full Stack Developer & Cloud Architect
+                  Full Stack Developer &amp; Cloud Architect
                 </h1>
                 <p className="text-xl text-gray-300 leading-relaxed max-w-lg">
                   Building scalable web applications with React, Node.js, and cloud technologies. Specialized in enterprise solutions, real-time systems, and secure architectures.
@@ -139,7 +136,7 @@ export default function Home() {
                   <a href="#projects">View My Work</a>
                 </Button>
                 <Button asChild className="bg-transparent hover:bg-white/10 border border-white/20 text-white font-semibold rounded-full px-8 h-12">
-                  <a href="https://github.com/pintu544" target="_blank">GitHub</a>
+                  <a href="https://github.com/jaihoi" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </Button>
               </div>
 
@@ -186,7 +183,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm a passionate full-stack developer from India with a B.Tech in Computer Science from Kurukshetra University. I specialize in building enterprise-grade web applications that solve real-world problems.
+                I&apos;m a passionate full-stack developer from India with a B.Tech in Computer Science from Kurukshetra University. I specialize in building enterprise-grade web applications that solve real-world problems.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
                 Currently working at Secure Access Tech, I lead full-stack development initiatives for security-driven products. My expertise spans modern frontend frameworks, robust backend systems, and cloud infrastructure.
@@ -282,12 +279,12 @@ export default function Home() {
                 <div className="flex gap-3">
                   {project.githubUrl && (
                     <Button asChild size="sm" className="bg-transparent hover:bg-white/10 border border-white/20 text-white">
-                      <a href={project.githubUrl} target="_blank">Code</a>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">Code</a>
                     </Button>
                   )}
                   {project.liveUrl && (
                     <Button asChild size="sm" className="bg-[#00d9b6] hover:bg-[#00e6c3] text-black">
-                      <a href={project.liveUrl} target="_blank">Live</a>
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">Live</a>
                     </Button>
                   )}
                 </div>
@@ -372,7 +369,7 @@ export default function Home() {
 
                 <Quote className="w-6 h-6 text-[#00d9b6]/30 mb-4" />
 
-                <p className="text-gray-300 leading-relaxed mb-6 italic">"{testimonial.content}"</p>
+                <p className="text-gray-300 leading-relaxed mb-6 italic">&quot;{testimonial.content}&quot;</p>
 
                 <div className="pt-6 border-t border-white/10">
                   <p className="font-semibold text-white">{testimonial.name}</p>
@@ -391,7 +388,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <p className="text-lg text-gray-300">I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
+              <p className="text-lg text-gray-300">I&apos;m always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
 
               <div className="space-y-3">
                 <a href="mailto:pksharmagh4@gmail.com" className="flex items-center gap-4 p-4 bg-white/5 hover:bg-white/10 rounded-lg transition-colors">
@@ -410,11 +407,11 @@ export default function Home() {
                   </div>
                 </a>
 
-                <a href="https://github.com/pintu544" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-white/5 hover:bg-white/10 rounded-lg transition-colors">
+                <a href="https://github.com/jaihoi" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-white/5 hover:bg-white/10 rounded-lg transition-colors">
                   <Github className="w-6 h-6 text-[#00d9b6]" />
                   <div>
                     <p className="text-sm text-gray-400">GitHub</p>
-                    <p className="text-white font-semibold">@pintu544</p>
+                    <p className="text-white font-semibold">@jaihoi</p>
                   </div>
                 </a>
               </div>
