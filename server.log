@@ -1,0 +1,170 @@
+$ next dev --turbopack
+   ▲ Next.js 15.5.6 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://169.254.0.21:3000
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 2.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 8.4s
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 5450ms
+ GET / 200 in 9918ms
+ ⚠ Cross origin request detected from pintu-portfolio.lindy.site to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1177ms
+ GET /favicon.ico 200 in 1616ms
+ ✓ Compiled in 654ms
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 835ms
+ GET /favicon.ico 200 in 289ms
+ GET / 200 in 574ms
+ GET /favicon.ico 200 in 331ms
+ GET / 200 in 558ms
+ ✓ Compiled in 479ms
+ ✓ Compiled in 0ms
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 867ms
+ GET /favicon.ico 200 in 476ms
+ GET / 200 in 456ms
+ ✓ Compiled in 546ms
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 648ms
+ GET /favicon.ico 200 in 439ms
+ GET / 200 in 531ms
+ GET / 200 in 437ms
+ ✓ Compiled in 504ms
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ ReferenceError: document is not defined
+    at Home (app/page.tsx:104:128)
+  102 |     <div className="min-h-screen bg-black text-white overflow-hidden">
+  103 |       {/* Scroll Progress Indicator */}
+> 104 |       <div className="fixed top-0 left-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 z-50" style={{ width: `${(scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%` }}></div>
+      |                                                                                                                                ^
+  105 |
+  106 |       {/* Animated background gradient with parallax */}
+  107 |       <div className="fixed inset-0 z-0"> {
+  digest: '217516793'
+}
+ GET / 500 in 657ms
+ ⨯ ReferenceError: document is not defined
+    at Home (app/page.tsx:104:128)
+  102 |     <div className="min-h-screen bg-black text-white overflow-hidden">
+  103 |       {/* Scroll Progress Indicator */}
+> 104 |       <div className="fixed top-0 left-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 z-50" style={{ width: `${(scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%` }}></div>
+      |                                                                                                                                ^
+  105 |
+  106 |       {/* Animated background gradient with parallax */}
+  107 |       <div className="fixed inset-0 z-0"> {
+  digest: '217516793'
+}
+ GET / 500 in 371ms
+ ✓ Compiled in 333ms
+ ✓ Compiled in 901ms
+ ✓ Compiled in 0ms
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ ReferenceError: document is not defined
+    at Home (app/page.tsx:123:128)
+  121 |     <div className="min-h-screen bg-black text-white overflow-hidden">
+  122 |       {/* Scroll Progress Indicator */}
+> 123 |       <div className="fixed top-0 left-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 z-50" style={{ width: `${(scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%` }}></div>
+      |                                                                                                                                ^
+  124 |
+  125 |       {/* Animated background gradient with parallax */}
+  126 |       <div className="fixed inset-0 z-0"> {
+  digest: '3200249023'
+}
+ GET / 500 in 1074ms
+ GET /favicon.ico 200 in 536ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 395ms
+ GET /favicon.ico 200 in 2755ms
+ GET /favicon.ico 200 in 346ms
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ ReferenceError: document is not defined
+    at Home (app/page.tsx:123:128)
+  121 |     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white overflow-hidden">
+  122 |       {/* Scroll Progress Indicator */}
+> 123 |       <div className="fixed top-0 left-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 z-50" style={{ width: `${(scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%` }}></div>
+      |                                                                                                                                ^
+  124 |
+  125 |       {/* Geometric background pattern with gradient */}
+  126 |       <div className="fixed inset-0 z-0 overflow-hidden"> {
+  digest: '3200249023'
+}
+ GET / 500 in 884ms
+ GET /favicon.ico 200 in 370ms
+ ⨯ ReferenceError: document is not defined
+    at Home (app/page.tsx:123:128)
+  121 |     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white overflow-hidden">
+  122 |       {/* Scroll Progress Indicator */}
+> 123 |       <div className="fixed top-0 left-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 z-50" style={{ width: `${(scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%` }}></div>
+      |                                                                                                                                ^
+  124 |
+  125 |       {/* Geometric background pattern with gradient */}
+  126 |       <div className="fixed inset-0 z-0 overflow-hidden"> {
+  digest: '3200249023'
+}
+ GET / 500 in 353ms
+ GET /favicon.ico 200 in 297ms
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ ReferenceError: document is not defined
+    at Home (app/page.tsx:123:96)
+  121 |     <div className="min-h-screen bg-[#121625] text-white overflow-hidden">
+  122 |       {/* Scroll Progress Indicator */}
+> 123 |       <div className="fixed top-0 left-0 h-1 bg-[#00AD9F] z-50" style={{ width: `${(scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%` }}></div>
+      |                                                                                                ^
+  124 |
+  125 |       {/* Netlify-style background with line illustrations */}
+  126 |       <div className="fixed inset-0 z-0 overflow-hidden"> {
+  digest: '3200249023'
+}
+ GET / 500 in 1130ms
+ ⨯ ReferenceError: document is not defined
+    at Home (app/page.tsx:123:96)
+  121 |     <div className="min-h-screen bg-[#121625] text-white overflow-hidden">
+  122 |       {/* Scroll Progress Indicator */}
+> 123 |       <div className="fixed top-0 left-0 h-1 bg-[#00AD9F] z-50" style={{ width: `${(scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%` }}></div>
+      |                                                                                                ^
+  124 |
+  125 |       {/* Netlify-style background with line illustrations */}
+  126 |       <div className="fixed inset-0 z-0 overflow-hidden"> {
+  digest: '3200249023'
+}
+ GET / 500 in 304ms
+ ✓ Compiled in 806ms
+ ✓ Compiled in 593ms
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ ⨯ ReferenceError: document is not defined
+    at Home (app/page.tsx:92:96)
+  90 |     <div className="min-h-screen bg-[#0a0e27] text-white">
+  91 |       {/* Scroll Progress */}
+> 92 |       <div className="fixed top-0 left-0 h-1 bg-[#00d9b6] z-50" style={{ width: `${(scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%` }}></div>
+     |                                                                                                ^
+  93 |
+  94 |       {/* Navigation */}
+  95 |       <nav className="fixed top-0 w-full z-40 bg-[#0a0e27]/95 backdrop-blur-sm border-b border-white/5"> {
+  digest: '682881721'
+}
+ GET / 500 in 884ms
+ ⨯ ReferenceError: document is not defined
+    at Home (app/page.tsx:92:96)
+  90 |     <div className="min-h-screen bg-[#0a0e27] text-white">
+  91 |       {/* Scroll Progress */}
+> 92 |       <div className="fixed top-0 left-0 h-1 bg-[#00d9b6] z-50" style={{ width: `${(scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%` }}></div>
+     |                                                                                                ^
+  93 |
+  94 |       {/* Navigation */}
+  95 |       <nav className="fixed top-0 w-full z-40 bg-[#0a0e27]/95 backdrop-blur-sm border-b border-white/5"> {
+  digest: '682881721'
+}
+ GET / 500 in 376ms
+ ✓ Compiled in 217ms
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 991ms
+ GET /favicon.ico 200 in 372ms
